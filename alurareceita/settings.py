@@ -10,6 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+from dotenv import load_dotenv
+load_dotenv()
+
+
 from pathlib import Path
 import os
 
@@ -80,10 +84,10 @@ WSGI_APPLICATION = 'alurareceita.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'alura_receita',
-        'USER': 'postgres',
-        'PASSWORD': 'Hotmail55!',
-        'HOST': 'database-2.cbxla4brqaor.us-east-1.rds.amazonaws.com'
+        'NAME': os.environ['ALURARECEITA_DB_NAME'],
+        'USER': os.environ['ALURARECEITA_DB_USER'],
+        'PASSWORD': os.environ['ALURARECEITA_DB_PASSWORD'],
+        'HOST': os.environ['ALURARECEITA_DB_HOST']
     }
 }
 
