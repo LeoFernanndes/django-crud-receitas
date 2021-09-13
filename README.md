@@ -23,8 +23,9 @@ Para uma lista completa das dependências do projeto, vá para [requirements.txt
 
 Obs.: Para rodar o app, você precisa do docker-compose instalado.
 
-1. Clone a branch master localmente. \
+1. Clone a branch master localmente. 
     ```git clone https://github.com/LeoFernanndes/django-crud-receitas.git```
 2. Verifique se existem processos rodando na porta 80.
 3. Para subir o servidor com todas as dependências necessárias: \
    ```sudo docker-compose up --build``` \
+    O comando deve ser executado como sudo pois o container do postgres é dono dos próprios processos.
