@@ -4,3 +4,4 @@ nginx/logs
 .idea
 */__pycache__
 postgres-data
+media
