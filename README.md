@@ -15,7 +15,7 @@ Para entender melhor a configuração dos serviços, veja: [docker-compose.yml](
 Docker version 20.10.8 \
 Docker-compose version 1.29.2 \
 Django version 3.1.5 \
-Gunicorn version 20.1.0 \
+Gunicorn version 20.1.0 
 
 Para uma lista completa das dependências do projeto, vá para [requirements.txt](./requirements.txt)
 
