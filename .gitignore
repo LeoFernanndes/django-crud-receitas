@@ -1,7 +1,6 @@
 venv/
-.env
+*/.env
 nginx/logs
 .idea
 */__pycache__
-postgres-data
-media
+*/postgres-data
